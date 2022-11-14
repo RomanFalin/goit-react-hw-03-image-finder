@@ -1,16 +1,14 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
-};
+import Searchbar from 'components/Searchbar/Searchbar';
+
+import { Component } from 'react';
+import GalleryList from 'components/ImageGallery/ImageGallery';
+import axios from 'axios';
+import Loader from 'components/Loader/Loader';
+import LoadMoreBtn from 'components/Button/Button';
+import Modal from 'components/Modal/Modal';
+
+axios.defaults.baseURL = 'https://pixabay.com/api/';
+
+class App extends Component {}
+
+export default App;
